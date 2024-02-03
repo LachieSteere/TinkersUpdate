@@ -1,0 +1,40 @@
+{
+  "type": "tconstruct:composable",
+  "level_display": "tconstruct:default",
+  "tooltip_display": "always",
+  "modules": [
+    {
+      "type": "tconstruct:incremental"
+    },
+    {
+      "type": "tconstruct:attribute",
+      "unique": "tconstruct.modifier.reach",
+      "attribute": "forge:reach_distance",
+      "operation": "addition",
+      "each_level": 1.0,
+      "slots": [
+        "mainhand",
+        "offhand",
+        "feet",
+        "legs",
+        "chest",
+        "head"
+      ]
+    },
+    {
+      "type": "tconstruct:attribute",
+      "unique": "tconstruct.modifier.reach",
+      "attribute": "forge:attack_range",
+      "operation": "addition",
+      "each_level": 1.0,
+      "slots": [
+        "mainhand",
+        "offhand",
+        "feet",
+        "legs",
+        "chest",
+        "head"
+      ]
+    }
+  ]
+}

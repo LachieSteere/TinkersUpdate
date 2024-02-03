@@ -1,0 +1,80 @@
+{
+  "parent": "tconstruct:tools/modified",
+  "display": {
+    "icon": {
+      "item": "minecraft:writable_book"
+    },
+    "title": {
+      "translate": "advancements.tconstruct.tools.upgrade_slots.title"
+    },
+    "description": {
+      "translate": "advancements.tconstruct.tools.upgrade_slots.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_modified": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "type": "tconstruct:tool_stack",
+            "predicate": {
+              "type": "tconstruct:and",
+              "predicates": [
+                {
+                  "type": "tconstruct:has_modifier",
+                  "modifier": "tconstruct:writable",
+                  "level": {
+                    "min": 1
+                  },
+                  "check": "upgrades"
+                },
+                {
+                  "type": "tconstruct:has_modifier",
+                  "modifier": "tconstruct:recapitated",
+                  "level": {
+                    "min": 1
+                  },
+                  "check": "upgrades"
+                },
+                {
+                  "type": "tconstruct:has_modifier",
+                  "modifier": "tconstruct:harmonious",
+                  "level": {
+                    "min": 1
+                  },
+                  "check": "upgrades"
+                },
+                {
+                  "type": "tconstruct:has_modifier",
+                  "modifier": "tconstruct:resurrected",
+                  "level": {
+                    "min": 1
+                  },
+                  "check": "upgrades"
+                },
+                {
+                  "type": "tconstruct:has_modifier",
+                  "modifier": "tconstruct:gilded",
+                  "level": {
+                    "min": 1
+                  },
+                  "check": "upgrades"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_modified"
+    ]
+  ]
+}

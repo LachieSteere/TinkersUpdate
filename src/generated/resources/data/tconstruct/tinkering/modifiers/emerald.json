@@ -1,0 +1,50 @@
+{
+  "type": "tconstruct:composable",
+  "level_display": "tconstruct:no_levels",
+  "tooltip_display": "always",
+  "modules": [
+    {
+      "type": "tconstruct:rarity",
+      "rarity": "uncommon"
+    },
+    {
+      "type": "tconstruct:stat_boost",
+      "stat": "tconstruct:durability",
+      "operation": "multiply_base",
+      "flat": 0.5
+    },
+    {
+      "type": "tconstruct:repair",
+      "flat": 0.5
+    },
+    {
+      "type": "tconstruct:stat_boost",
+      "stat": "tconstruct:knockback_resistance",
+      "operation": "add",
+      "flat": 0.05
+    },
+    {
+      "type": "tconstruct:stat_boost",
+      "stat": "tconstruct:attack_damage",
+      "operation": "multiply_conditional",
+      "flat": 0.25
+    },
+    {
+      "type": "tconstruct:stat_boost",
+      "stat": "tconstruct:mining_speed",
+      "operation": "multiply_conditional",
+      "flat": 0.25
+    },
+    {
+      "type": "tconstruct:set_stat",
+      "stat": "tconstruct:harvest_tier",
+      "value": "minecraft:iron"
+    },
+    {
+      "type": "tconstruct:stat_boost",
+      "stat": "tconstruct:accuracy",
+      "operation": "add",
+      "flat": 0.1
+    }
+  ]
+}

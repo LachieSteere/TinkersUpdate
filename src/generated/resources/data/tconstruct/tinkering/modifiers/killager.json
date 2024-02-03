@@ -1,0 +1,28 @@
+{
+  "type": "tconstruct:composable",
+  "level_display": "tconstruct:default",
+  "tooltip_display": "always",
+  "modules": [
+    {
+      "type": "tconstruct:incremental"
+    },
+    {
+      "type": "tconstruct:conditional_melee_damage",
+      "target": {
+        "type": "mantle:or",
+        "predicates": [
+          {
+            "type": "mantle:mob_type",
+            "mobs": "minecraft:illager"
+          },
+          {
+            "type": "mantle:tag",
+            "tag": "forge:villagers"
+          }
+        ]
+      },
+      "percent": false,
+      "each_level": 2.0
+    }
+  ]
+}
